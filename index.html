@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Prata', serif;
+        margin: auto;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: sticky;
+        top: 0;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    .w3-image {
+        max-width: 100%;
+        height: auto
+    }
+
+    img {
+        vertical-align: middle
+    }
+
+    a {
+        color: inherit
+    }
+
+    .header {
+        background-image: url(https://64.media.tumblr.com/9db7b0aed7abaf58cd15ce37b81cdaef/c88a471a1ff65de9-f9/s1280x1920/938c01bc7a2e7af9dfb508bef414c24d98fc3c3a.jpg);
+        height: 300px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .box {
+        border-radius: 25px 25px 25px 25px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .menuchoice {
+        background-color: rgba(255, 255, 255, 0);
+        margin: 100px;
+        padding: 50px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    }
+
+    .mainbox {
+        padding: 10px;
+        margin: auto;
+        border-radius: 25px;
+        width: 55%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #menu2 {
+        float: right;
+    }
+
+    .pagetitle {
+        font-size: 40pt;
+        color: white;
+        padding-top: 200px;
+        padding-left: 20px;
+        margin: 0px;
+        font-family: 'Aboreto', cursive;
+    }
+
+    .img {
+        float: left;
+        width: 100%
+    }
+</style>
+
+<title> Ningguang's Teahouse | 寧光的茶館 </title>
+
+</head>
+
+<body>
+
+    <div id="home">
+        <div class="header">
+            <p class="pagetitle">Ningguang's Teahouse</p>
+        </div>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+    </ul>
+
+    <div id="menu">
+        <div class="menuchoice">
+            <img src="menu1.png" alt="Table Setting" width="450" height="600">
+            <img src="menu2.png" id="menu2" alt="Table Setting" width="450" height="600">
+        </div>
+    </div>
+
+    <div id="reservations">
+        <div class="mainbox">
+            <div class="box">
+                <h1>Please insert the information asked.</h1>
+                <label for="fakeid1">Phone Number:</label>
+                <input id="fakeid1">
+                <br>
+                <label for="fakeid2">Address:</label>
+                <input id="fakeid2">
+                <br>
+                <label for="fakeid6">Email:</label>
+                <input id="fakeid6">
+                <br>
+                <label for="fakeid7">Twitter:</label>
+                <input id="fakeid7">
+
+                <fieldset>
+                    <legend>Mode of recieving:</legend>
+
+                    <div>
+                        <input type="radio" id="fakeid3" name="drone" value="Delivery">
+                        <label for="fakeid3">Delivery</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="fakeid4" name="drone" value="Pick up">
+                        <label for="fakeid4">Pick up</label>
+                    </div>
+                </fieldset>
+
+                <label for="fakeid5">Num. of Copies (1-10):</label>
+
+                <input type="number" id="fakeid5" name="num" min="1" max="10">
+                <p>Billing will be settled through email.</p>
+                <input class="favorite styled" type="button" value="Place order">
+
+            </div>
+        </div>
+</div>
+</body>
+
+</html>
